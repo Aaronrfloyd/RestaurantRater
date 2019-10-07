@@ -1,0 +1,49 @@
+﻿@model RestaurantRaiderMVC.Models.Restaurant
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<h4>
+    Resturaunt
+</h4>
+<hr />
+<dl class="dl-horziontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.RestaurantID)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.RestaurantID)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Address)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Address)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Rating)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Rating)
+    </dd>
+</dl>
+ 
+    @Html.ActionLink("Back to List", "details")
+
+
+
+
+
+
+
+
+
+
